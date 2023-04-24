@@ -19,8 +19,9 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::group(['middleware' => 'auth'], function (){
-    Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/', [BlogController::class, 'index'])->name('index');
 });
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::match(['get', 'post'],'/search-date', '\App\Http\Controllers\BlogController@searchDate')->name('search-date');
 
