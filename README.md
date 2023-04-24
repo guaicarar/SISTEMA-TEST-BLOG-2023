@@ -44,12 +44,12 @@ composer install
     LOG_DEPRECATIONS_CHANNEL=null
     LOG_LEVEL=debug
 
-    DB_CONNECTION=mysql
+    DDB_CONNECTION=pgsql
     DB_HOST=127.0.0.1
-    DB_PORT=3306
+    DB_PORT=5432
     DB_DATABASE=appblogs
-    DB_USERNAME=root
-    DB_PASSWORD=
+    DB_USERNAME=postgres
+    DB_PASSWORD=Postgres._2023
 
     BROADCAST_DRIVER=log
     CACHE_DRIVER=file
